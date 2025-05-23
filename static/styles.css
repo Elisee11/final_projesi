@@ -1,0 +1,893 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(253, 253, 253);
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+header{
+    background-image: url(image/charlesdeluvio-Lks7vei-eAg-unsplash.jpg);
+    height: 100vh;
+    background-size:cover ;
+    background-position:center ;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: black;
+}
+
+.logo {
+    font-size: 28px;
+    color:blueviolet;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: rgb(244, 242, 241);
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 14px;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: blueviolet;
+    color: black;
+}
+
+.main-content {
+    text-align: center;
+    margin-top: 180px;
+}
+
+.main-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: rgb(9, 9, 9);
+}
+
+
+.container {
+    padding:0px 0px ;
+    color: rgb(250, 243, 243);
+    background-color: black;
+}
+.titre{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.titre h1{
+    color: blueviolet;
+    font-size: 70px;
+
+}
+.boutton{
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.boutton a{
+    color:rgb(8, 8, 8);
+    text-decoration: none;
+    border: 2px solid rgb(1, 1, 1);
+    padding: 8px 14px;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+.boutton a:hover{
+    background-color:blueviolet;
+    color:white;
+}
+
+/* register and login*/
+.auth-page-wrapper {
+ font-family: sans-serif; 
+ margin: 0;
+ background: linear-gradient(135deg, #3498db, #9b59b6); 
+ background-size: cover;
+ background-repeat: no-repeat;
+ min-height: 100vh; 
+ display: flex;
+ justify-content: center; 
+ align-items: center; 
+}
+
+
+.container {
+ width: 100%;
+ max-width: 400px;
+ padding: 20px;
+}
+
+.form-wrapper {
+ background-color: linear-gradient(135deg, #3498db, #9b59b6); 
+ border-radius: 10px;
+ padding: 30px;
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+ text-align: center;
+ color: #fff;
+ margin-bottom: 30px;
+}
+
+.input-group {
+ margin-bottom: 20px;
+}
+
+.input-group label {
+ display: block;
+ color: #eee;
+ margin-bottom: 5px;
+}
+
+.input-group input {
+ width: calc(100% - 22px);
+ padding: 10px;
+ border: none;
+ border-radius: 5px;
+ background-color: rgba(255, 255, 255, 0.3);
+ color: #fff;
+}
+
+.input-group input::placeholder {
+ color: #ddd;
+}
+
+.btn {
+ display: block;
+ width: 100%;
+ padding: 10px;
+ border: none;
+ border-radius: 5px;
+ background-color: #3498db;
+ color: #fff;
+ font-weight: bold;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+ background-color: #2980b9;
+}
+
+.switch-form {
+ text-align: center;
+ margin-top: 20px;
+ color: #eee;
+}
+
+.switch-form a {
+ color: #3498db;
+ text-decoration: none;
+}
+
+.switch-form a:hover {
+ text-decoration: underline;
+}
+
+.options {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 15px;
+ color: #eee;
+ font-size: 0.9em;
+}
+
+.options a {
+ color: #eee;
+ text-decoration: none;
+}
+
+.options a:hover {
+ text-decoration: underline;
+}
+
+.options label input {
+ margin-right: 5px;
+ vertical-align: middle;
+}
+
+/*dashboard*/
+
+.dashboard-wrapper {
+ display: flex; 
+ min-height: 100vh;
+ background: linear-gradient(135deg, #3498db, #9b59b6); 
+ font-family: sans-serif;
+ color: #333; 
+}
+
+/* Styles pour la barre latérale */
+.sidebar {
+ width: 250px;
+ background-color: rgba(255, 255, 255, 0.1); 
+ padding: 20px;
+ display: flex;
+ flex-direction: column;
+ color: #fff;
+}
+
+.sidebar-header {
+ margin-bottom: 30px;
+ text-align: center;
+ /* Styles pour le logo/titre */
+}
+
+.sidebar-menu {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+.sidebar-menu li {
+ margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+ color: #eee;
+ text-decoration: none;
+ display: block;
+ padding: 10px;
+ border-radius: 5px;
+ transition: background-color 0.3s ease;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+ background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-menu i {
+ margin-right: 10px;
+}
+
+/* Styles pour le contenu principal */
+.main-content {
+ flex-grow: 1;
+ padding: 20px;
+ background-color: rgba(255, 255, 255, 0.8); 
+ border-top-left-radius: 20px;
+ border-bottom-left-radius: 20px;
+ overflow-y: auto;
+}
+
+/* Styles pour l'en-tête */
+.bar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 30px;
+ padding-bottom: 20px;
+ border-bottom: 1px solid #ddd;
+}
+
+.user-info h2 {
+ margin: 0;
+ font-size: 1.5em;
+ color: #333;
+}
+
+.user-info i {
+ font-size: 1.8em;
+ color: #555;
+ margin-left: 10px;
+ vertical-align: middle;
+}
+
+.search-bar {
+ display: flex;
+ align-items: center;
+ background-color: #fff;
+ border-radius: 20px;
+ padding: 5px 15px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+ border: none;
+ outline: none;
+ padding: 5px;
+ margin-right: 10px;
+}
+
+.search-bar i {
+ color: #555;
+}
+
+/* Styles pour la grille de contenu (cartes, graphiques, etc.) */
+.content-grid {
+ display: grid;
+ gap: 20px; 
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+}
+
+/* Styles de base pour les cartes */
+.card {
+ background-color: #fff;
+ border-radius: 10px;
+ padding: 20px;
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles spécifiques pour les cartes de résumé */
+.summary-cards {
+ grid-column: 1 / -1;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 20px;
+ align-items: start; 
+}
+
+.summary-cards .card {
+ display: flex;
+ align-items: center;
+ background: linear-gradient(to right, #ff9a8b, #ff6b6b); 
+ color: #fff;
+}
+
+.pageviews-card {
+ background: linear-gradient(to right, #a05195, #d45087); 
+}
+
+.download-card {
+ background: linear-gradient(to right, #4dabf5, #2d9cdb); 
+}
+
+
+.card-icon {
+ font-size: 2em;
+ margin-right: 15px;
+ opacity: 0.8;
+}
+
+.card-title {
+ margin: 0;
+ font-size: 0.9em;
+ opacity: 0.9;
+}
+
+.card-value {
+ margin: 5px 0;
+ font-size: 1.8em;
+ font-weight: bold;
+}
+
+.card-change {
+ font-size: 0.8em;
+ opacity: 0.9;
+}
+
+.mini-chart {
+ /* Styles pour les graphiques miniatures - vous devrez les implémenter avec du JS/SVG/Canvas */
+ height: 30px;
+ width: 100%;
+ background-color: rgba(255, 255, 255, 0.3);
+ margin-top: 10px;
+}
+
+
+/* Styles pour les cartes de pourcentage */
+.percentage-cards {
+ display: flex;
+ gap: 20px;
+ justify-content: center;
+ align-items: center;
+ /* Pas une carte au sens strict, peut être intégrée dans la grille */
+ background-color: #fff;
+ border-radius: 10px;
+ padding: 20px;
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les cercles de pourcentage (basés sur la structure de l'image) */
+.percentage-circle {
+ text-align: center;
+}
+
+.circle {
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ background-color: #eee; 
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 5px;
+ overflow: hidden; 
+}
+
+.circle span {
+ position: relative;
+ z-index: 1;
+ color: #333;
+ font-weight: bold;
+ font-size: 1.1em;
+}
+
+/* Styles pour simuler les segments colorés du cercle */
+.circle-slice {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: conic-gradient(from 0deg, var(--color) calc(var(--percentage) * 3.6deg), transparent 0deg);
+}
+
+
+/* Styles pour la section de la liste des dates */
+.date-list-card {
+ grid-column: span 1; 
+}
+
+.date-list-card table {
+ width: 100%;
+ border-collapse: collapse;
+}
+
+.date-list-card td {
+ padding: 10px 0;
+ border-bottom: 1px solid #eee;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.date-list-card td i {
+ margin-right: 10px;
+ color: #555;
+}
+
+/* Styles pour la section du graphique en courbes */
+.line-chart-card {
+ grid-column: span 2; 
+}
+
+.line-chart-card h3 {
+ margin-top: 0;
+}
+
+.chart-placeholder {
+ width: 100%;
+ height: 200px; 
+ background: linear-gradient(to right, #a05195, #ff6b6b); 
+ border-radius: 8px;
+ 
+}
+
+
+/* Media queries pour l'adaptabilité */
+@media (max-width: 768px) {
+ .dashboard-wrapper {
+  flex-direction: column;
+ }
+
+ .sidebar {
+  width: 100%;
+  flex-direction: row; 
+  overflow-x: auto;
+ }
+
+ .sidebar-menu {
+  display: flex; 
+ }
+
+ .sidebar-menu li {
+  flex: 0 0 auto; 
+  margin-right: 10px;
+  margin-bottom: 0;
+ }
+
+ .sidebar-menu a {
+  padding: 8px 12px;
+  text-align: center;
+ }
+
+ .main-content {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+ }
+
+ .header {
+  flex-direction: column;
+  align-items: flex-start;
+ }
+
+ .search-bar {
+  margin-top: 15px;
+  width: 100%;
+ }
+
+ .summary-cards {
+  grid-template-columns: 1fr;
+ }
+
+ .percentage-cards {
+  flex-direction: column;
+  gap: 10px;
+ }
+
+ .line-chart-card,
+ .date-list-card {
+  grid-column: span 1; 
+ }
+}
+
+
+/*personnel*/
+
+.auth-page-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3498db, #9b59b6); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Styles pour le conteneur de la liste (centrage et largeur max) */
+.container.personnel-list-container {
+    width: 100%;
+    max-width: 900px; 
+    padding: 0; 
+    margin: auto; 
+}
+
+
+/* Styles pour l'enveloppeur (fond, coins arrondis, ombre) - réutilise form-wrapper */
+.form-wrapper {
+    background-color: linear-gradient(135deg, #3498db, #9b59b6);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: #f3f3f3; 
+}
+
+/* Styles pour le titre de la liste */
+.form-wrapper h2 {
+    text-align: center;
+    color: #fdfafa;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Styles pour le tableau */
+.table-responsive {
+    overflow-x: auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: rgba(253, 251, 251, 0.05); 
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; 
+}
+
+th {
+    color: #fefafa; 
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.02); 
+}
+
+/* Styles pour la colonne Actions */
+.actions {
+    white-space: nowrap; 
+    
+}
+
+/* Styles pour le bouton Supprimer */
+.delete-button {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 5px; 
+    margin: 0 5px; 
+    transition: color 0.3s ease;
+}
+
+.delete-button:hover {
+    color: #c0392b; 
+}
+
+/* Styles pour le bouton Ajouter Personnel (stylisé comme un bouton) */
+.add-personnel-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    min-width: 150px;
+    background-color: #2ecc71; 
+    color: #fff;
+}
+
+.add-personnel-button:hover {
+    background-color: #27ae60;
+}
+
+
+/* Media query pour l'adaptabilité */
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px; 
+    }
+}
+
+
+
+/*edit personnel*/
+
+.auth-page-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3498db, #9b59b6); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+/* Styles pour le conteneur du formulaire (centrage et largeur max) */
+.container.form-container {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 0 !important; 
+    margin-bottom: 0 !important;
+}
+
+
+/* Styles pour l'enveloppeur du formulaire (fond, coins arrondis, ombre) */
+.form-wrapper {
+    background-color: linear-gradient(135deg, #3498db, #9b59b6); 
+    border-radius: 10px;
+    padding: 30px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: #fff; 
+}
+
+/* Styles pour le titre */
+.form-wrapper h2 { 
+    text-align: center;
+    color: #fff;
+    margin-top: 0; 
+    margin-bottom: 30px; 
+}
+
+/* Styles pour les groupes de champs (label + input) */
+
+.form-group.input-group {
+    margin-bottom: 15px; 
+}
+
+/* Styles pour les labels */
+
+.form-group label {
+    display: block; 
+    color: #eee; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+/* Styles pour les champs de saisie (input) */
+.form-group input.form-control {
+    width: calc(100% - 24px); 
+    padding: 12px; 
+    border: none; 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    color: #fff; 
+    font-size: 1em;
+    box-shadow: none !important; 
+    outline: none;
+}
+
+.form-group input.form-control::placeholder {
+    color: #ddd; 
+}
+
+/* Styles pour le groupe de boutons */
+.button-group {
+    margin-top: 30px;
+    text-align: center; 
+}
+
+
+/* Styles spécifiques pour le bouton Sauvegarder */
+.button-group .save-button { 
+    background-color: #3498db; 
+    color: #fff;
+    margin-right: 10px;
+    border-color: #3498db; 
+}
+
+.button-group .save-button:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+/* Styles spécifiques pour le bouton Annuler (lien) */
+.button-group .cancel-button { 
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    
+}
+
+.button-group .cancel-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #fff;
+}
+
+/* Media query pour l'adaptabilité des boutons */
+@media (max-width: 400px) {
+    .button-group {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .button-group .btn { 
+        margin-right: 0 !important;
+        width: 100%; 
+    }
+}
+
+/*add personnel*/
+.auth-page-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Styles pour le conteneur du formulaire (centrage et largeur max) */
+.container.form-container {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+/* Styles pour l'enveloppeur du formulaire (fond, coins arrondis, ombre) */
+.form-wrapper {
+    background-color: linear-gradient(135deg, #3498db, #9b59b6); 
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+/* Styles pour le titre */
+.form-wrapper h2 {
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Styles pour les groupes de champs */
+.form-group.input-group {
+    margin-bottom: 15px;
+}
+
+/* Styles pour les labels */
+.form-group label {
+    display: block;
+    color: #eee;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Styles pour les champs de saisie */
+.form-group input.form-control {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 1em;
+    box-shadow: none !important;
+    outline: none;
+}
+
+.form-group input.form-control::placeholder {
+    color: #ddd;
+}
+
+/* Styles pour le groupe de boutons */
+.button-group {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* Styles spécifiques pour le bouton Ajouter */
+.button-group .add-button {
+    background-color: #167705; 
+    color: #fff;
+    margin-right: 10px;
+    border-color: #087b15;
+}
+
+.button-group .add-button:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+/* Styles spécifiques pour le bouton Annuler (lien) */
+.button-group .dashboard-button {
+    background-color: red; 
+    color: #fff;
+    border-color: red;
+    margin: 30px;
+    padding: 7px;
+    
+}
+
+.button-group .dashboard-button:hover {
+    background-color: red;
+    border-color: red;
+}
+
+/* Media query pour l'adaptabilité des boutons */
+@media (max-width: 400px) {
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-group .btn {
+        margin-right: 0 !important;
+        width: 100%;
+    }
+}
