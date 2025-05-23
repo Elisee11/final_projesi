@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'gelistirme_anahtari'
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('postgresql://daily_app_user:hUw065h9ZxovhZ2mI2Bu3mUbxwYHAfTl@dpg-d0o834umcj7s73e847og-a.oregon-postgres.render.com/daily_app', 'sqlite:///site.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 
 # Flask-Login configuration
