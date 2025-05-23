@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Connexion</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+ </head>
+<body>
+
+ <div class="auth-page-wrapper"> <div class="container">
+  <div class="form-wrapper">
+  <h2>Connexion</h2>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+  
+  
+  <form method="post" action="{{ url_for('login')}}">
+  <div class="input-group">
+  <label for="name" class="form-label">Email</label>
+  <input type="text" id="email" name="email" placeholder="Votre email">
+  </div>
+  <div class="input-group">
+  <label for="password" class="form-label">Mot de passe</label>
+  <input type="password" id="password" name="password" placeholder="Votre mot de passe">
+  </div>
+  <div class="options">
+  <a href="#">Mot de passe oublié?</a>
+  </div>
+  <button type="submit" class="btn">Se connecter</button>
+  </form>
+  <div class="switch-form">
+  <p>Pas de compte? <a href="{{ url_for('register') }}">S'inscrire</a></p>
+  </div>
+  </div>
+  </div>
+ </div> </body>
+</html>

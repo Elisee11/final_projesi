@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Work Center - Accueil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="homepage">
+    <nav class="navbar">
+        <div class="logo">WORK<span>CENTER</span></div>
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">HOME</a>
+                <a href="{{ url_for('logout') }}">DISCONNECT</a>
+        </div>
+    </nav>
+
+    <header>
+        <!-- Dilersen buraya bir hoş geldin yazısı veya görsel ekleyebilirsin -->
+    </header>
+
+    <div class="titre">
+        <h1>WORK SPACE</h1>
+    </div>
+
+    <div class="boutton">
+      
+            <a href="{{ url_for('login') }}">CONNEXION</a>
+            <a href="{{ url_for('register') }}">REGISTRATION</a>
+
+    </div>
+</body>
+</html>

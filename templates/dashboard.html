@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <!-- Logo ou titre -->
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="{{ url_for('home') }}" class="active"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="{{ url_for('personnel_list') }}"><i class="fas fa-users"></i> Liste des Personnels</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <div class="bar">
+                <div class="user-info">
+                    <h2>Bienvenue, {{ current_user.name }}!</h2>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <!-- Cards Section -->
+            <section class="content-grid">
+                <div class="summary-cards">
+                    <div class="card earning-card">
+                        <div class="card-icon"><i class="fas fa-dollar-sign"></i></div>
+                        <div class="card-details">
+                            <p class="card-title">GAIN</p>
+                            <p class="card-value">$ 5729</p>
+                            <p class="card-change">+ $78 <i class="fas fa-arrow-up"></i></p>
+                            <div class="mini-chart"></div>
+                        </div>
+                    </div>
+
+                    <div class="card pageviews-card">
+                        <div class="card-icon"><i class="fas fa-eye"></i></div>
+                        <div class="card-details">
+                            <p class="card-title">VUES DE PAGE</p>
+                            <p class="card-value">293878</p>
+                            <p class="card-change">-2930 <i class="fas fa-arrow-down"></i></p>
+                            <div class="mini-chart"></div>
+                        </div>
+                    </div>
+
+                    <div class="card download-card">
+                        <div class="card-icon"><i class="fas fa-download"></i></div>
+                        <div class="card-details">
+                            <p class="card-title">TÉLÉCHARGEMENTS</p>
+                            <p class="card-value">582920</p>
+                            <p class="card-change">-1029 <i class="fas fa-arrow-down"></i></p>
+                            <div class="mini-chart"></div>
+                        </div>
+                    </div>
+
+                    <div class="percentage-cards">
+                        <div class="percentage-circle">
+                            <div class="circle" style="--percentage: 65; --color: #ff6b6b;">
+                                <span>65%</span>
+                                <div class="circle-slice"></div>
+                                <div class="circle-slice"></div>
+                                <div class="circle-mask"></div>
+                            </div>
+                            <p>2019</p>
+                        </div>
+                        <div class="percentage-circle">
+                            <div class="circle" style="--percentage: 45; --color: #a05195;">
+                                <span>45%</span>
+                                <div class="circle-slice"></div>
+                                <div class="circle-slice"></div>
+                                <div class="circle-mask"></div>
+                            </div>
+                            <p>2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Date and performance list -->
+                <div class="date-list-card card">
+                    <table>
+                        <tr>
+                            <td><i class="far fa-calendar-alt"></i> 19 Décembre</td>
+                            <td>$ 293,97</td>
+                        </tr>
+                        <tr>
+                            <td><i class="far fa-calendar-alt"></i> 20 Décembre</td>
+                            <td>$ 402,16</td>
+                        </tr>
+                        <tr>
+                            <td><i class="far fa-calendar-alt"></i> 21 Décembre</td>
+                            <td>$ 398,21</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="line-chart-card card">
+                    <h3>Statistiques de Performance</h3>
+                    <div class="chart-placeholder"></div>
+                </div>
+            </section>
+                       
