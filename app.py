@@ -65,19 +65,28 @@ def register():
     if request.method == 'POST': 
         email = request.form.get('email')
         password = request.form.get('password')
+        confirm_password = request.form.get('confirmPassword')  
         name = request.form.get('name')
 
-        if User.query.filter_by(email=email).first():
-            flash('Bu e-posta zaten kayıtlı!', 'danger')
+        # Vérifie si les mots de passe correspondent
+        if password != confirm_password:
+            flash("Les mots de passe ne correspondent pas.", "danger")
             return redirect(url_for('register'))
 
+        # Vérifie si l'utilisateur existe déjà
+        if User.query.filter_by(email=email).first():
+            flash('Cet e-mail est déjà enregistré !', 'danger')
+            return redirect(url_for('register'))
+
+        # Hash du mot de passe et enregistrement
         hashed_password = generate_password_hash(password, method='pbkdf2:sha256')
         new_user = User(name=name, email=email, password=hashed_password)
         db.session.add(new_user)
         db.session.commit()
 
-        flash('Kayıt başarılı! Giriş yapabilirsiniz.', 'success')
+        flash('Inscription réussie ! Vous pouvez maintenant vous connecter.', 'success')
         return redirect(url_for('login'))
+
     return render_template('register.html')
 
 # Dashboard
