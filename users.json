@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Elxee",
+        "email": "eliseegahouidi8@gmail.com",
+        "password": "pbkdf2:sha256:1000000$2aVTaKKP3m7oeMJY$4f325e0efb1cfccfeb32ba34f906ea7ead3cdbdd764c0ae2c18327ae1ef4a1b9"
+    },
+    {
+        "id": 2,
+        "name": "parfait",
+        "email": "angeparfait1@gmail.com",
+        "password": "pbkdf2:sha256:1000000$DFPYtlLylFWGn2uN$ce1f214e4057e4528234a363e28f36294c727f2b5e895c8d11c7bc1807c73a4a"
+    },
+    {
+        "id": 3,
+        "name": "parfait",
+        "email": "eliseegahouidi6@gmail.com",
+        "password": "pbkdf2:sha256:1000000$IJHX2pHKgWMDZBBe$4b9965ae1168d50bde511f7e90352aa690bd0f8c0f6c204b69271cbf87b67ff2"
+    },
+    {
+        "id": 4,
+        "name": "eliss",
+        "email": "eliss@gmail.com",
+        "password": "pbkdf2:sha256:1000000$UkbWpmu0U8iarDBE$d70a39fbb4d78292e726e68e4ded89f94c242f377fadf30edb81edac80771c05"
+    }
+]
